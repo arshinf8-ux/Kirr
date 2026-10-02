@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Academy | آموزش برنامه نویسی</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- پس زمینه متحرک -->
+    <div class="background"></div>
+
+    <!-- منوی سایت -->
+    <header>
+
+        <div class="logo">
+            🚀 Code Academy
+        </div>
+
+        <button id="themeBtn">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- بخش اصلی -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    👨‍💻 از صفر تا حرفه‌ای
+                </p>
+
+                <h1>
+                    برنامه‌نویسی را
+                    <span>متفاوت</span>
+                    یاد بگیر
+                </h1>
+
+                <p class="description">
+                    آموزش زبان‌های برنامه‌نویسی با انیمیشن،
+                    مثال‌های واقعی و توضیح ساده‌ی کدها.
+                </p>
+
+                <button class="start-btn" onclick="startLearning()">
+                    🚀 شروع یادگیری
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- زبان ها -->
+
+        <section class="languages">
+
+            <h2>
+                🧑‍💻 زبان‌های برنامه‌نویسی
+            </h2>
+
+            <p class="section-description">
+                زبان مورد علاقه‌ات را انتخاب کن
+            </p>
+
+
+            <div class="language-container">
+
+
+                <div class="language-card python"
+                     onclick="openLanguage('Python')">
+
+                    <div class="language-icon">
+                        🐍
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        ساده و قدرتمند
+                    </p>
+
+                    <span>
+                        شروع یادگیری ←
+                    </span>
+
+                </div>
+
+
+                <div class="language-card javascript"
+                     onclick="openLanguage('JavaScript')">
+
+                    <div class="language-icon">
+                        🟨
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        ساخت سایت‌های تعاملی
+                    </p>
+
+                    <span>
+                        شروع یادگیری ←
+                    </span>
+
+                </div>
+
+
+                <div class="language-card cpp"
+                     onclick="openLanguage('C++')">
+
+                    <div class="language-icon">
+                        ⚡
+                    </div>
+
+                    <h3>C++</h3>
+
+                    <p>
+                        قدرتمند و سریع
+                    </p>
+
+                    <span>
+                        شروع یادگیری ←
+                    </span>
+
+                </div>
+
+
+                <div class="language-card java"
+                     onclick="openLanguage('Java')">
+
+                    <div class="language-icon">
+                        ☕
+                    </div>
+
+                    <h3>Java</h3>
+
+                    <p>
+                        برنامه‌نویسی حرفه‌ای
+                    </p>
+
+                    <span>
+                        شروع یادگیری ←
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- امکانات -->
+
+        <section class="features">
+
+            <h2>
+                ✨ چرا این سایت؟
+            </h2>
+
+
+            <div class="feature-container">
+
+                <div class="feature">
+                    <div>🎬</div>
+                    <h3>آموزش انیمیشنی</h3>
+                    <p>
+                        مفاهیم سخت را با انیمیشن یاد بگیر.
+                    </p>
+                </div>
+
+
+                <div class="feature">
+                    <div>💻</div>
+                    <h3>مثال واقعی</h3>
+                    <p>
+                        برای هر مفهوم مثال کدنویسی داریم.
+                    </p>
+                </div>
+
+
+                <div class="feature">
+                    <div>🧠</div>
+                    <h3>توضیح خط‌به‌خط</h3>
+                    <p>
+                        هر قسمت کد را ساده توضیح می‌دهیم.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            ساخته شده با ❤️ برای برنامه‌نویس‌ها
+        </p>
+
+        <p>
+            © 2026 Code Academy
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>دوره برنامه نویسی</title>
+
+    <link rel="stylesheet" href="course.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <button class="back-btn" onclick="goHome()">
+            ← برگشت
+        </button>
+
+        <div class="course-title">
+
+            <span id="languageIcon">🐍</span>
+
+            <span id="languageName">
+                Python
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- صفحه -->
+
+    <main>
+
+
+        <!-- معرفی دوره -->
+
+        <section class="course-hero">
+
+            <div class="hero-icon" id="bigIcon">
+                🐍
+            </div>
+
+            <h1>
+                آموزش
+                <span id="heroLanguage">
+                    Python
+                </span>
+            </h1>
+
+            <p>
+                برنامه‌نویسی را از صفر شروع کن
+                و قدم‌به‌قدم جلو برو 🚀
+            </p>
+
+        </section>
+
+
+        <!-- محتوای دوره -->
+
+        <section class="lesson-area">
+
+
+            <!-- لیست درس ها -->
+
+            <aside class="lessons">
+
+                <h2>
+                    📚 درس‌ها
+                </h2>
+
+
+                <button
+                    class="lesson active"
+                    onclick="changeLesson(0)"
+                >
+                    <span>01</span>
+                    اولین برنامه
+                </button>
+
+
+                <button
+                    class="lesson"
+                    onclick="changeLesson(1)"
+                >
+                    <span>02</span>
+                    متغیرها
+                </button>
+
+
+                <button
+                    class="lesson"
+                    onclick="changeLesson(2)"
+                >
+                    <span>03</span>
+                    شرط‌ها
+                </button>
+
+
+                <button
+                    class="lesson"
+                    onclick="changeLesson(3)"
+                >
+                    <span>04</span>
+                    حلقه‌ها
+                </button>
+
+
+                <button
+                    class="lesson"
+                    onclick="changeLesson(4)"
+                >
+                    <span>05</span>
+                    توابع
+                </button>
+
+            </aside>
+
+
+            <!-- محتوای درس -->
+
+            <article class="lesson-content">
+
+                <div class="lesson-number">
+                    درس ۱
+                </div>
+
+
+                <h2 id="lessonTitle">
+                    اولین برنامه
+                </h2>
+
+
+                <p id="lessonDescription">
+
+                    در این درس یاد می‌گیریم
+                    چطور اولین برنامه خودمان را بنویسیم.
+
+                </p>
+
+
+                <!-- کد -->
+
+                <div class="code-box">
+
+                    <div class="code-header">
+
+                        <span>
+                            💻 Code
+                        </span>
+
+                        <button onclick="copyCode()">
+                            📋 کپی
+                        </button>
+
+                    </div>
+
+
+                    <pre><code id="code">
+print("Hello World!")
+                    </code></pre>
+
+                </div>
+
+
+                <!-- توضیح -->
+
+                <div class="explanation">
+
+                    <h3>
+                        🧠 توضیح کد
+                    </h3>
+
+                    <div id="explanationText">
+
+                        <div class="explain-item">
+
+                            <span class="line-number">
+                                1
+                            </span>
+
+                            <p>
+                                <strong>print</strong>
+                                یک دستور برای نمایش
+                                اطلاعات در خروجی است.
+                            </p>
+
+                        </div>
+
+
+                        <div class="explain-item">
+
+                            <span class="line-number">
+                                2
+                            </span>
+
+                            <p>
+                                متن داخل
+                                <strong>" "</strong>
+                                همان چیزی است که
+                                روی صفحه نمایش داده می‌شود.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- خروجی -->
+
+                <div class="output">
+
+                    <h3>
+                        🖥️ خروجی
+                    </h3>
+
+                    <div id="outputText">
+                        Hello World!
+                    </div>
+
+                </div>
+
+
+                <!-- تمرین -->
+
+                <div class="exercise">
+
+                    <h3>
+                        🎯 تمرین
+                    </h3>
+
+                    <p>
+                        برنامه‌ای بنویس که اسم خودت
+                        را نمایش دهد.
+                    </p>
+
+                    <textarea
+                        id="answer"
+                        placeholder="کدت را اینجا بنویس..."
+                    ></textarea>
+
+
+                    <button
+                        class="check-btn"
+                        onclick="checkAnswer()"
+                    >
+                        ✅ بررسی جواب
+                    </button>
+
+
+                    <div id="result"></div>
+
+                </div>
+
+
+                <!-- دکمه درس بعد -->
+
+                <button
+                    class="next-btn"
+                    onclick="nextLesson()"
+                >
+                    درس بعدی ←
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="course.js"></script>
+
+</body>
+
+</html>
